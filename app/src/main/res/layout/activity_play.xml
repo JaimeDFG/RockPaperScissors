@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/rockpaperscissors3"
+    tools:context=".Play">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Choose one"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Rock"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            android:onClick="Compare"/>
+
+        <RadioButton
+            android:id="@+id/paper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paper"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            android:onClick="Compare" />
+
+        <RadioButton
+            android:id="@+id/scissors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scissors"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            android:onClick="Compare" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Champi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/donebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#E6967C"
+        android:text="Done"
+        android:textColor="#145C7C"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.843" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
